@@ -13,6 +13,13 @@
 		4D9EDC50238DD2F4009969FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D9EDC4E238DD2F4009969FA /* Main.storyboard */; };
 		4D9EDC52238DD2F6009969FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D9EDC51238DD2F6009969FA /* Assets.xcassets */; };
 		4D9EDC55238DD2F6009969FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D9EDC53238DD2F6009969FA /* LaunchScreen.storyboard */; };
+		4D9EDC60238DD400009969FA /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9EDC5F238DD400009969FA /* PinterestLayout.swift */; };
+		4D9EDC62238DD419009969FA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9EDC61238DD419009969FA /* ViewModel.swift */; };
+		4D9EDC64238DD5B1009969FA /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9EDC63238DD5B1009969FA /* PhotoCell.swift */; };
+		4D9EDC6A238DD5D0009969FA /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9EDC66238DD5CF009969FA /* APIClient.swift */; };
+		4D9EDC6C238DD5D0009969FA /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9EDC68238DD5D0009969FA /* Endpoint.swift */; };
+		4D9EDC72238DD610009969FA /* UnsplashClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9EDC71238DD610009969FA /* UnsplashClient.swift */; };
+		4D9EDC76238DD758009969FA /* UnsplashImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9EDC75238DD758009969FA /* UnsplashImages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		4D9EDC51238DD2F6009969FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D9EDC54238DD2F6009969FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D9EDC56238DD2F6009969FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D9EDC5F238DD400009969FA /* PinterestLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
+		4D9EDC61238DD419009969FA /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		4D9EDC63238DD5B1009969FA /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		4D9EDC66238DD5CF009969FA /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		4D9EDC68238DD5D0009969FA /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		4D9EDC71238DD610009969FA /* UnsplashClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnsplashClient.swift; sourceTree = "<group>"; };
+		4D9EDC75238DD758009969FA /* UnsplashImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashImages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,9 @@
 		4D9EDC47238DD2F4009969FA /* Image Layouts */ = {
 			isa = PBXGroup;
 			children = (
+				4D9EDC5C238DD3DD009969FA /* Views */,
+				4D9EDC5D238DD3E9009969FA /* View Models */,
+				4D9EDC5E238DD3F2009969FA /* Networking */,
 				4D9EDC48238DD2F4009969FA /* AppDelegate.swift */,
 				4D9EDC4A238DD2F4009969FA /* SceneDelegate.swift */,
 				4D9EDC4C238DD2F4009969FA /* ViewController.swift */,
@@ -65,6 +82,34 @@
 				4D9EDC56238DD2F6009969FA /* Info.plist */,
 			);
 			path = "Image Layouts";
+			sourceTree = "<group>";
+		};
+		4D9EDC5C238DD3DD009969FA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4D9EDC63238DD5B1009969FA /* PhotoCell.swift */,
+				4D9EDC5F238DD400009969FA /* PinterestLayout.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4D9EDC5D238DD3E9009969FA /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				4D9EDC61238DD419009969FA /* ViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		4D9EDC5E238DD3F2009969FA /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				4D9EDC66238DD5CF009969FA /* APIClient.swift */,
+				4D9EDC68238DD5D0009969FA /* Endpoint.swift */,
+				4D9EDC71238DD610009969FA /* UnsplashClient.swift */,
+				4D9EDC75238DD758009969FA /* UnsplashImages.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +183,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D9EDC62238DD419009969FA /* ViewModel.swift in Sources */,
+				4D9EDC60238DD400009969FA /* PinterestLayout.swift in Sources */,
+				4D9EDC6C238DD5D0009969FA /* Endpoint.swift in Sources */,
+				4D9EDC72238DD610009969FA /* UnsplashClient.swift in Sources */,
+				4D9EDC6A238DD5D0009969FA /* APIClient.swift in Sources */,
+				4D9EDC76238DD758009969FA /* UnsplashImages.swift in Sources */,
 				4D9EDC4D238DD2F4009969FA /* ViewController.swift in Sources */,
 				4D9EDC49238DD2F4009969FA /* AppDelegate.swift in Sources */,
+				4D9EDC64238DD5B1009969FA /* PhotoCell.swift in Sources */,
 				4D9EDC4B238DD2F4009969FA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
